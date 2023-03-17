@@ -18,9 +18,6 @@ int main(void)
 	printf("Enter a number: \n");
 	/* prompt user for number */
 	
-	scanf("%d", n);
-		printf("User entered %d as input\n", n);
-	
 	/* print type of number entered by user */	
 	
 	if (n > 0)
