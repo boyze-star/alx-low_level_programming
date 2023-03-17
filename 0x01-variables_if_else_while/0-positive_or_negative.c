@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* main - print if the number is negative, positive or 0 */
 /* print whether the number is negative or positive */
 
 int main(void)
