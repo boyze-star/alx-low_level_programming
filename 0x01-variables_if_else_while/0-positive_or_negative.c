@@ -3,8 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/**
- * main - print if the number is negative, positive or 0 
+/** main - print if the number is negative, positive or 0 
  * Return: Always 0
  */
 /* print whether the number is negative or positive */
@@ -16,9 +15,6 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	/* ask user to enter number */
-	/* prompt user for number */	
-	/* print type of number entered by user */	
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
