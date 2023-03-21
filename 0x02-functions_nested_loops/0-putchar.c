@@ -7,8 +7,7 @@ int main(void)
 	 * printf() statement
 	 *
 	 * Return: Always 0.
-	 */
-	/* using 'write' to print
+	 * using 'write' to print
 	 * open file as '.c' extension
 	 * execute main() function
 	 * write() is a system call
