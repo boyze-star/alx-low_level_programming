@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <unistd.h>
 
+/* main -printing without printf() statement
+ *
+ * Return: Always 0*/
 int main(void)
 {
-	/* main - printing strings without
-	 * printf() statement
-	 *
-	 * Return: Always 0.
+	/* description body
 	 * using 'write' to print
 	 * open file as '.c' extension
 	 * execute main() function
