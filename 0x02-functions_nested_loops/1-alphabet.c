@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <unistd.h>
 
-/* defins tolower() function 
- * converts uppercase alphabet to lower case
- * returns same passed character
- * if its anything either than
- * character is stored in int form
- * when character is passed as arguement
- * corresponding ASCII value(int)
- * is passed instead of 
- * character
- */
 int main(void)
 {
-	char ch = tolower("A-Z, a-z");
-	scanf("%c", ch);
-	fwrite(1, "ch\n", 3);
-	return (0);
-}	
-	
+	/* main - printing alphabets because I
+	 * have insomnia
+	 * Return: Always 0.
+	 */
+        //char ch = 'A';
+        char myChars[] = {'A', 'B', 'C', 'D'};
+
+        for (int i = 0; i < 4; i++) 
+        {
+            char tolowerch = tolower(myChars[i]);
+            write(1, &tolowerch, 1);
+
+	}
+        return (0);
+}
