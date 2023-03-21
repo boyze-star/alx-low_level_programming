@@ -3,7 +3,12 @@
 
 int main(void)
 {
-	/* using 'write' to print 
+	/* main - printing strings without
+	 * printf() statement
+	 *
+	 * Return: Always 0.
+	 */
+	/* using 'write' to print
 	 * open file as '.c' extension
 	 */
 	/* execute main() function
@@ -18,5 +23,5 @@ int main(void)
 	 * include <unistd.h>
 	 */
 	write(1, "_putchar\n", 9);
-	return(0);
+	return (0);
 }
