@@ -8,7 +8,7 @@ int main(void)
 	 * have insomnia
 	 * Return: Always 0.
 	 */
-        //char ch = 'A';
+        /* char ch = 'A'; */
         char myChars[] = {'A', 'B', 'C', 'D'};
 
         for (int i = 0; i < 4; i++) 
