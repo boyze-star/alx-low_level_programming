@@ -17,7 +17,6 @@ int main()
 	 * execute as ./a.out
 	 * include <unistd.h>
 	 */
-	
-	write(1,"_putchar",9);
+	write(1, "_putchar", 9);
 	return(0);
 }
