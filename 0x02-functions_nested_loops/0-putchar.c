@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 
-/* main -printing without printf() statement
+/* main - check the code
  *
- * Return: Always 0
+ * Return: Always 0.
  */
 int main(void)
 {
