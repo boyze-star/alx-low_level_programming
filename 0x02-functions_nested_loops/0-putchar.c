@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main()
+int main(void)
 {
 	/* using 'write' to print 
 	 * open file as '.c' extension
