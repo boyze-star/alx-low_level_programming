@@ -12,7 +12,7 @@
  * is passed instead of 
  * character itself
  */
-int main()
+void main(void)
 {
 	int ch; 
 
