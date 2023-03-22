@@ -25,15 +25,10 @@ int main(void)
 	after_1 = (after / l);
 	after_2 = (after % l);
 
-	for (x < 91;x < 99;++X);
+	for (x < 91;x < 99;++x);
 	{
-		printf("%lu\n", after_1 + (after_2 / l));
-		printf("%lu\n", after_2 % l);
-		before_1 = after_1 - before_1;
-		before_2 = after_2 - before_2;
-		after_1 = after_1 + before_1;
-		after_2 = after_2 + before_2;
+		before_1 =;
+		before_2 =;
+		after_1 -
 	}
-	printf('\n');
-	return (0);
 }
