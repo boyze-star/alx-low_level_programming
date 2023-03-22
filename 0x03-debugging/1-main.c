@@ -4,7 +4,7 @@
 int main(void)
 {
 	int x;
-	printf("infinite loop incoming\n");
+	printf("infinite loop incoming :(\n");
 	x = 0;
 	while (x < 10)
 	{
