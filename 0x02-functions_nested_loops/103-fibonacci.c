@@ -9,9 +9,9 @@ int main(void)
 	int i;
 	unsigned long int j, k, next, sum;
 
-	int j = 1;
-	int k = 2;
-	int sum = 0;
+	j = 1;
+	k = 2;
+	sum = 0;
 
 	for (i = 1; i <= 33; ++i)
 	{
