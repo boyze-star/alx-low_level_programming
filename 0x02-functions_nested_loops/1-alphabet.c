@@ -1,21 +1,17 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <unistd.h>
+#include "main.h"
+
+/** main - Entry point 
+ * Return: Always zero
+ */
 
 int main(void)
 {
-	/* main - printing alphabets because I
-	 * have insomnia
-	 * Return: Always 0.
-	 */
-        /* char ch = 'A'; */
-        char myChars[] = {'A', 'B', 'C', 'D'};
+	char c;
 
-        for (int i = 0; i < 4; i++) 
-        {
-            char tolowerch = tolower(myChars[i]);
-            write(1, &tolowerch, 1);
-
+	for(c = 'a' ;c <= 'z' ;c++ )
+	{
+		_putchar(c);
 	}
-        return (0);
-}
+		_putchar('\n');
+	return(0);
+}	
