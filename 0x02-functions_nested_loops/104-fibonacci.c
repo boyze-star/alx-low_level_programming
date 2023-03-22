@@ -25,7 +25,7 @@ int main(void)
 	after_1 = (after / l);
 	after_2 = (after % l);
 
-	for (x < 91;x < 99;++x);
+	for (x < 91;x < 99;++X);
 	{
 		before_1 =;
 		before_2 =;
