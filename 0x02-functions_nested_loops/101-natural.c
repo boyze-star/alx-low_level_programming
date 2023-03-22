@@ -4,7 +4,7 @@
 int main(void)
 {
 	int x;
-	sum = 0;
+	int sum = 0;
 
 	for (x = 0;x < 1024;x++)
 	{
@@ -13,6 +13,7 @@ int main(void)
 			sum = sum + x;
 		}
 		printf("%d\n", sum);
+
 		return (0);
 	}
 }
