@@ -5,6 +5,10 @@
 	 */
 	void print_alphabet(void)
 	{
+		/*
+		 *  function that prints the alphabet, 
+		 *  in lowercase, followed by a new line.
+		 */
 		char alphabet;
 
 		for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
