@@ -1,15 +1,18 @@
 #include "main.h"
 
-/** function test for neg_pos
- * Return: 0
- */
+/**
+* main - Test function for positive or negative
+* Return: 0
+*/
 
 int main(void)
 {
-	int x;
+	int i;
 
-	x = 0;
-	positive_or_negative(x);
+	i = 0;
 
-return (0);
+	positive_or_negative(i);
+
+	return (0);
 }
+
