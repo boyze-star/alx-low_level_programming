@@ -2,7 +2,7 @@
 
 /**
  * _strlen - returns the length of a string
- * @s: length of string 
+ * @s: length of string
  *
  * Return: Always 0.
  */
@@ -10,11 +10,11 @@ int _strlen(char *s)
 {
 	int length = 0;
 
-	while (*s != '0')
+	while (*s != '\0')
 	{
 		length++;
 		s++;
+		printf("%d", length);
 	}
-	
-	return (0);
+	return (length);
 }
