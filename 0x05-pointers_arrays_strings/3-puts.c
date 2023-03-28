@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _puts - check the code for Holberton School students.
+ * _puts - prints a string, followed by a new line,
  * @str: validate the character
  * Return: Always 0.
  */
