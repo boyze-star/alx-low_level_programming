@@ -2,9 +2,9 @@
 
 /**
  * _strcat -  function appends the src string to the dest string
- * @src - source variable
- * @dest - destination variable
- *
+ * @src: - source variable
+ * @dest: - destination variable
+ * Description: Concatenate of two pointers
  * Return: Always 0.
  */
 char *_strcat(char *dest, char *src)
@@ -19,7 +19,6 @@ char *_strcat(char *dest, char *src)
 	{
 		i++;
 	}
-	
 	while (src[j] != '\0')
 	{
 		dest[i] = src[j];
