@@ -2,29 +2,28 @@
 
 /**
  * *rot13 -  function that encodes a string using rot13
- * @*: pointer variable
+ * @n: pointer variable
  * Descripton: is a simple letter substitution cipher that replaces a letter
  * with the letter 13 letters after it in the alphabet
  * Return: Always 0.
  */
-char *rot13(char *)
+char *rot13(char *n)
 {
 	int i;
 	int j;
-	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	char alpstr[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rotstr[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; n[i] != '\0'; i++)
 	{
 		for (j = 0; j < 52; j++)
 		{
-			if (s[i] == data1[j])
+			if (n[i] == alpstr[j])
 			{
-				s[i] = datarot[j];
+				n[i] = rotstr[j];
 				break;
 			}
 		}
 	}
-	return (s);
-
+	return (n);
 }
