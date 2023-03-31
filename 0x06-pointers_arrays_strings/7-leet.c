@@ -2,8 +2,8 @@
 
 /**
  * *leet - function that encodes a string into numbers
- * @*: variable
- * Description: *leet 
+ * @n: variable
+ * Description: *leet
  * Return: Always 0.
  */
 char *leet(char *n)
