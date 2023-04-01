@@ -21,7 +21,6 @@ char *rot13(char *n)
 			if (n[i] == alpstr[j])
 			{
 				n[i] = rotstr[j];
-				break;
 			}
 		}
 	}
