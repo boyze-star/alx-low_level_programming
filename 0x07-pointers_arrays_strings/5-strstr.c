@@ -3,26 +3,21 @@
 /**
  * _strstr - function that locates a substring
  * @haystack: variable
- * #needle: variable
+ * @needle: variable
  *
  * Return: Always 0.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *i = haystack;
-	char *p = needle;
+	int i;
 
-	for (haystack = 0; *haystack != '\0'; haystack++)
+	while (*haystack)
 	{
-		while (*i == *p && *p != '\0')
-		{
-			i++;
-			p++;
-		}
-		if (*p == '\0')
-		{
+		for (i = 0; needle[i] && haystack[i] && needle[i] == haystack[i]; i++)
+			;
+		if (!needle[i])
 			return (haystack);
-		}
+		haystack++;
 	}
 	return (0);
 }
