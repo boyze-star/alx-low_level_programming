@@ -6,7 +6,7 @@
  * @src: source variable
  * @n: counter variable
  *
- * Returns: Always dest.
+ * Returns: Always 0.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
