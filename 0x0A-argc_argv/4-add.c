@@ -12,7 +12,7 @@
  */
 int check_num(char *str)
 {
-	unsigned count;
+	unsigned int count;
 
 	count = 0;
 	while (count < strlen(str))
