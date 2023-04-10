@@ -1,14 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
- * programme print name
- * @void: - function not passed any parameters
+ * main - prints name ofr the programme
+ * @argc: number of arguements
+ * @argv: array of arguements
  *
  * Return: Always 0.
  */
-int main(void)
+int main()
 {
-	printf("Programme name : %s\n", 0-whatsmyname.c);
-	return (0);
+	int print_function_name(int agrc_attribute_((unused)), char *argv[])
+	{
+		printf("%s\n", *argv);
+		return (0);
+	}
 }
