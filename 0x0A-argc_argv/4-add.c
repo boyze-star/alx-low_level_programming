@@ -1,58 +1,37 @@
 #include <stdio.h>
-#include "main.h"
-#include <ctype.h>
-#include <stdlib.h>
-#include <string.h>
-
 /**
- * check_num - program that adds positive numbers
- * @str: string array
+ * add_positive - program that adds positive numbers
+ * @a: integer var
+ * @b: integer var
  *
- * Return: Always 0.
+ * Return: Always 0(Success), 1(Error)
  */
-int check_num(char *str)
+int add_positive(int a, int b)
 {
-	unsigned int count;
-
-	count = 0;
-	while (count < strlen(str))
+	if (a < 0 || b < 0)
 	{
-		if (!isdigit(str[count]))
-		{
-			return (0);
-		}
-		count++;
+		return (1);
 	}
-	return (0);
+	else
+	{
+		return (a + b);
+	}
 }
-/**
- * main - print the added digits
- * @argc: number of arguements
- * @argv: array of arguements
+/**main - checkcode
+ * @num1: var one
+ * @num2: var two
  *
- * Return: Always 0.
+ * Return: Always 0(Success), 1(Error)
  */
-int main(int argc, char *argv[])
+int main()
 {
-	int count;
-	int str_to_int;
-	int sum = 0;
+	int num1, num2, result;
 
-	count = 1;
-	while (count < argc)
-	{
-		if (check_num(argv[count]))
-		{
-			str_to_int = atoi(argv[count]);
-			sum = sum + str_to_int;
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
-		count++;
-	}
-	printf("%d\n", sum);
+	scanf("%d %d", &num2, &num1);
+	
+	result = add_positive(num1, num2);
+	
+	printf(" %d\n",result);
+	
 	return (0);
 }
