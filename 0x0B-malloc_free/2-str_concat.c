@@ -9,9 +9,12 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *concatenate = (char *)malloc((strlen(s1) + strlen(s2) + 1) * sizeof(char));
+	char *concatenate = (char *)malloc((strlen(s1)
+	+ strlen(s2) + 1) * sizeof(char));
+
 	strcpy(concatenate, s1);
 	strcpy(concatenate, s2);
+	concatenate = strcat(s1, s2);
 	return (concatenate);
 	if (s1 == NULL || s2 == NULL)
 	{
