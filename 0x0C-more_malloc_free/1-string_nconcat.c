@@ -13,18 +13,44 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int len1 = strlen(s1);
-	int len2 = strlen(s2);
+	char *s;
+	unsigned int i = 0, j = 0;
+	unsigned int len1 = 0;
+	unsigned int len2 = 0;
 
-	char *result = (char *)malloc(n * (len1 + len2) + 1);
-
-	if (result == NULL)
+	while (s1 && s1[len1])
 	{
-		printf("Error: Unable to allocate memory for string concatenation");
-		return ('\0');
+		len1++;
 	}
-	strcpy(result, s1);
-	strcat(result, s2);
-
-	return (result);
+	while (s2 && s2[len2])
+	{
+		len2++;
+	}
+	if (n < len2)
+	{
+		s = malloc(sizeof(char) * (len1 + n + 1));
+	}
+	else
+	{
+		s = malloc(sizeof(char) * (len1 + len2 + 1));
+	}
+	if (!s)
+	{
+		return (NULL);
+	}
+	while (i < len1)
+	{
+		s[i] = s1[i];
+		i++;
+	}
+	while (n < len2 && i < (len1 + n))
+	{
+		s[i++] = s2[i++];
+	}
+	while (n >= len2 && i < (len1 + len2))
+	{
+		s[i++] = s2[i++];
+	}
+	s[i] = '\0';
+	return (s);
 }
