@@ -7,7 +7,7 @@
  *
  * Return: Void.
  */
-void _puts(char *str)
+void _puts(__attribute__((unused))char *str)
 {
 }
 /**
