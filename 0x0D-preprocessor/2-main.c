@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** main - print file name
+/**
+ * main - prints the file name
  *
- * Return: Always 0(Success), 1(Error)
+ * Return: Always 0(Success) ,1(Error).
  */
 int main(void)
 {
