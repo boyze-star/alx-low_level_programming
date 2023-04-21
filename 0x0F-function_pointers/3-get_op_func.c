@@ -5,19 +5,20 @@
  * get_op_func - selects correction function to perform
  * @s: operator passed as arguement
  *
- * Return: pointer ro a fuction corresponding to the
+ * Return: pointer to a fuction corresponding to the
  * operator given as a parameter
  */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
-		{"+", op_add};
-		{"-", op_sub};
-		{"*", op_mul};
-		{"/", op_div};
-		{"%", op_mod};
-		{NULL, NULL};
-	}
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{"+", op_add},
+		{NULL, NULL}
+	};
+
 	int i = 0;
 
 	while (ops[i].op != NULL && *(ops[i].op) != *s)
