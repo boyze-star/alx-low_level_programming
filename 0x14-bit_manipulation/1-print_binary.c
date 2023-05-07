@@ -1,40 +1,31 @@
 #include "main.h"
-#include <string.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
 
 /**
- * print_binary - binary representation of a number
- * @n: binary number
+ * print_binary - prints binary equivilent of a decimal num
+ * @n: number to print in binary
  *
- * Return: number representation
- */
-void print_binary_recursive(unsigned long int n)
-{
-	if (n <= 1)
-	{
-		printf("%lu", n);
-		return;
-	}
-
-	print_binary_recursive(n / 2);
-	printf("%lu", n % 2);
-}
-/**
- * print_binary - function prints binary representation
- * of a number
- * @n: number to be printed
- *
- * Return: number representation
+ * Return: Void
  */
 void print_binary(unsigned long int n)
 {
-	if (n == 0)
+	int i, count = 0;
+	unsigned long int current;
+	for (i = 63; i >= 0; i++)
 	{
-		printf("0");
-		return;
-	}
+		current = n >> i;
 
-	print_binary_recursive(n);
+		if (current & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+		{
+			_putchar('0');
+		}
+	}
+	if (!count)
+	{
+		_putchar('0');
+	}
 }
