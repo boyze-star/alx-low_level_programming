@@ -16,14 +16,18 @@ char *_strdup(char * str)
 
 	if (str == NULL)
 	{
-		printf("This is an empty str\n");
+		/**
+		 * printf("This is an empty str\n");
+		 */
 		return (NULL);
 	}
 	length = strlen((str) + 1);
 	duplicate = (char *)malloc(length * sizeof(char));
 	if (duplicate == NULL)
 	{
-		printf("Found nothing in initial str\n");
+		/**
+		 * printf("Found nothing in initial str\n");
+		 */
 		return (NULL);
 	}
 	strcpy(duplicate, str);
