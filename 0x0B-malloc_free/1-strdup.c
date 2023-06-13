@@ -9,7 +9,7 @@
  *
  * Return: string duplicate
  */
-char *_strdup(char * str)
+char *_strdup(char *str)
 {
 	char *duplicate;
 	size_t length;
