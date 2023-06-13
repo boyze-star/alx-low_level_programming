@@ -12,14 +12,15 @@
  */
 char *create_array(unsigned int size, char c)
 {
-        unsigned int i;
+	char *array;
+        unsigned int i = 0;
     
     if (size == 0)
     {
         printf("Unable to allocate memory\n");
         return (NULL);
     }
-    char *array = (char *)malloc(size * sizeof(char));
+    array = (char *)malloc(size * sizeof(char));
     if (array == NULL)
     {
         printf("Array is  empty\n");
@@ -27,7 +28,7 @@ char *create_array(unsigned int size, char c)
     }
     else
     {
-        for (unsigned int i = 0; i < 0; i++)
+        for (i = 0; i < size; i++)
         {
             array[i] = c;
         }
