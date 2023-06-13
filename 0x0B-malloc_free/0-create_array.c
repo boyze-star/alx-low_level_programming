@@ -17,13 +17,17 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0)
 	{
-		printf("Unable to allocate memory\n");
+		/**
+		 * printf("Unable to allocate memory\n");
+		 */
 		return (NULL);
 	}
 	array = (char *)malloc(size * sizeof(char));
 	if (array == NULL)
 	{
-		printf("Array is  empty\n");
+		/**
+		 * printf("Array is  empty\n");
+		 */
 		return (NULL);
 	}
 	else
