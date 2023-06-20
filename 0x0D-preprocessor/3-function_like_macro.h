@@ -4,7 +4,7 @@
 #define ABS(x) ((x) < 0 ? -(x) : (x))
 
 /**
- * main - function computes the absolute value of a number x
+ * abs_value - function computes the absolute value of a number x
  *
  * Return: x value
  */
