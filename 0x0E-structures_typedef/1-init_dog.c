@@ -6,7 +6,7 @@
  * @d: variable to be initialized
  * @name: dog's name
  * @age: dog's age
- * @owner: owner's name 
+ * @owner: owner's name
  *
  * Return: Void
  */
