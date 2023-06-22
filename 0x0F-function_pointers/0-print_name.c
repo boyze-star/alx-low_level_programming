@@ -1,11 +1,11 @@
 #include "function_pointers.h"
 
-/*
- * print_name - function checks if function pointer is valid
- * @name: name tp be printed
- * @f: array of pointers
+/**
+ * print_name - function prints name
+ * @name: name to be printed
+ * @f: array of pointers to function
  *
- * Retuen: Void
+ * Return: Void
  */
 void print_name(char *name, void (*f)(char *))
 {
