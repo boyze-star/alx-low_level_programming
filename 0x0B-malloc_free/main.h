@@ -5,6 +5,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+void free_array(char **ar, int i);
+int wordcount(char *str);
 char **strtow(char *str);
 char *argstostr(int ac, char **av);
 void free_grid(int **grid, int height);
