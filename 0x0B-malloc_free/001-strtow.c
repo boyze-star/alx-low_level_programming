@@ -1,55 +1,14 @@
 #include "main.h"
 
 /**
- * wordcount - get word count from string
- * @str: string to count words present
+ * strtow - function that splits a string into words
+ * @str: string to be split
  *
- * Return: The number of words
-*/
-int wordcount(char *str)
-{
-	int words = 0;
-
-	while (*str != '\0')
-	{
-		if (*str == ' ')
-			str++;
-		else
-		{
-			while (*str != ' ' && *str != '\0')
-				str++;
-			words++;
-		}
-	}
-	return (words);
-}
-
-/**
- * free_array - free arr[i]
- * @ar: array to free
- * @i: array[i]
- *
- * Return: nothing
-*/
-void free_array(char **ar, int i)
-{
-	if (ar != NULL && i != 0)
-	{
-		while (i >= 0)
-		{
-			free(ar[i]);
-			i--;
-		}
-		free(ar);
-	}
-}
-
-/**
- * strtow - split a string to words
- * @str: string to split.
- *
- * Return: NULL if it fails
-*/
+ * Return: pointer to an array of strings (words)
+ * last element should be Null
+ * NULL if str == NULL or str == ""
+ * Null if function fails
+ */
 char **strtow(char *str)
 {
 	int i, s, j, str_l, word;
